@@ -1,5 +1,3 @@
-![trestlebridge farm landscape](./Trestlebridge.jpg)
-
 # Before You Start
 
 You are inheriting a code base. You cannot start from scratch and build your own, because you will almost never get that opportunity on the job. You must read the current code with your teammates and try to understand what it is doing. Then you must refactor it - even if it means deleting some of the code that currently exists - to build the rest of the features.
