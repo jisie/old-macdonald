@@ -9,6 +9,8 @@ namespace Trestlebridge.Models
     public class Farm
     {
         public List<GrazingField> GrazingFields { get; } = new List<GrazingField>();
+        public List<ChickenHouse> ChickenHouses { get; } = new List<ChickenHouse>();
+        public List<DuckHouse> DuckHouses { get; } = new List<DuckHouse>();
 
         /*
             This method must specify the correct product interface of the
@@ -32,6 +34,20 @@ namespace Trestlebridge.Models
             GrazingFields.Add(field);
             Console.WriteLine("Grazing Field created successfully!");
             Console.WriteLine(GrazingFields[GrazingFields.Count - 1]);
+        }
+
+        public void AddChickenHouse (ChickenHouse house)
+        {
+            ChickenHouses.Add(house);
+            Console.WriteLine("Chicken House created successfully!");
+            Console.WriteLine(ChickenHouses[ChickenHouses.Count - 1]);
+        }
+
+        public void AddDuckHouse (DuckHouse house)
+        {
+            DuckHouses.Add(house);
+            Console.WriteLine("Duck House created successfully!");
+            Console.WriteLine(DuckHouses[DuckHouses.Count - 1]);
         }
 
         public override string ToString()

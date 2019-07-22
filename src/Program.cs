@@ -54,7 +54,7 @@ namespace Trestlebridge
                 else if (option == "4")
                 {
                     DisplayBanner();
-                    Console.WriteLine(Trestlebridge);
+                    DisplayFarmReport.ShowStatus(Trestlebridge);
                     Console.WriteLine("\n\n\n");
                     Console.WriteLine("Press return key to go back to main menu.");
                     Console.ReadLine();
